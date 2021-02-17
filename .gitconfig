@@ -16,6 +16,7 @@
 	st = status -s
 	cl = clone
 	au = add -u
+	ac = !git add -u && git commit -m
 	ci = commit -m
 	co = checkout
 	br = branch
