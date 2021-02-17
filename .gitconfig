@@ -19,7 +19,7 @@
 	ci = commit -m
 	co = checkout
 	br = branch
-  up = !git fetch origin && git rebase -i origin/master
+	up = !git fetch origin && git rebase -i origin/master
 	go = !git rebase --continue
 	abort = !git rebase --abort
 	cleanup = !git remote prune origin && git gc
