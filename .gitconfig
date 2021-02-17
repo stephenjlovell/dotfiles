@@ -1,0 +1,40 @@
+[user]
+	name = Steve Lovell
+	email = sjlovell34@gmail.com
+[github]
+	user = stephenjlovell
+[core]
+	autocrlf = input
+  editor = code
+	excludesFile = '~/.gitignore'
+[alias]
+	ls =  log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	ll =  log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+	lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+  lg =  log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --color --graph
+	cp = cherry-pick
+	st = status -s
+	cl = clone
+	au = add -u
+	ci = commit -m
+	co = checkout
+	br = branch
+  up = !git fetch origin && git rebase -i origin/master
+  go = !git rebase --continue
+  abort = !git rebase --abort
+  cleanup = !git remote prune origin && git gc
+  changelog = !git commit -am 'Update changelog'
+	unstage = reset HEAD --
+[push]
+	default = simple
+[branch]
+	autosetuprebase = always
+[color]
+	ui = true
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[credential]
+	helper = osxkeychain
+	
