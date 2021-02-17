@@ -1,4 +1,4 @@
-source "$PWD/.bash_git"
+source "$HOME/dotfiles/.bash_git"
 
 export PATH=/usr/bin:/usr/local/bin:/usr/local/sbin:$HOME/.rbenv/bin:/usr/local/opt/go/libexec/bin:$PATH
 export PATH=/usr/local/opt/postgresql@13/bin:$PATH
