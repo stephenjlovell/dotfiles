@@ -16,7 +16,7 @@ export LC_ALL=en_US.UTF-8
 alias be='bundle exec'
 alias bi='bundle install'
 alias dk='docker'
-alias dc='docker compose'
+alias dc='docker-compose'
 
 eval "$(rbenv init - --no-rehash)"
 
