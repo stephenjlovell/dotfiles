@@ -17,6 +17,7 @@ alias be='bundle exec'
 alias bi='bundle install'
 alias dk='docker'
 alias dc='docker-compose'
+alias k='kubectl'
 
 eval "$(rbenv init - --no-rehash)"
 
