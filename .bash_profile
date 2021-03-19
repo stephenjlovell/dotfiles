@@ -1,9 +1,13 @@
 export PATH=/usr/bin:/usr/local/bin:/usr/local/sbin:$PATH
+# Postgres
 export PATH=/usr/local/opt/postgresql@13/bin:$PATH
+# Golang
 export GOPATH=$HOME/go_projects
 export PATH=$PATH:$GOPATH/bin
 export GOSRC=$GOPATH/src/github.com/stephenjlovell
-
+# Python
+export PATH=$PATH:/usr/local/opt/python@3.9/libexec/bin
+# Node
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
