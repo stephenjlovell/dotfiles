@@ -1,4 +1,4 @@
-export PATH=/usr/bin:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:$PATH
 # Postgres
 export PATH=/usr/local/opt/postgresql@13/bin:$PATH
 # Golang
@@ -26,3 +26,4 @@ alias k='kubectl'
 eval "$(rbenv init - --no-rehash)"
 
 source "$HOME/dotfiles/.bash_git"
+source "$HOME/dotfiles/.env"
