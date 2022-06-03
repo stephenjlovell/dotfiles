@@ -2,9 +2,16 @@ export PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:$PATH
 # Postgres
 export PATH=/usr/local/opt/postgresql/bin:$PATH
 # Golang
+export GOENV_ROOT=$HOME/.goenv
+export GOROOT=$HOME/go
 export GOPATH=$HOME/go_projects
-export PATH=$PATH:$GOPATH/bin
 export GOSRC=$GOPATH/src/github.com/stephenjlovell
+export PATH=$GOENV_ROOT/bin:$PATH
+eval "$(goenv init -)"
+# setting of $GOROOT and $GOPATH is handled by goenv
+export PATH=$PATH:$GOROOT/bin
+export PATH=$PATH:$GOPATH/bin
+
 # Ruby
 eval "$(rbenv init - --no-rehash)" 
 # Python
